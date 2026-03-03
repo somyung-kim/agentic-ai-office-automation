@@ -1,0 +1,48 @@
+This project, agentic-ai-office-automation, aims to build an adaptive Agentic AI system that reads diverse PDF documents and autonomously routes their contents into the correct office application (e.g., Excel, Google Forms, CRMs). The system is an example of Field Force Automation (FFA) powered by LLM-based agents. Professional software practices, modular architecture, and clear milestones will guide the project through research, development, testing, and deployment. The final presentation is scheduled for May 16.
+
+Professional and standard software development practices will be used during the entire scope of the project. 
+
+The roadmap is following:
+
+0. Research on agentic ai
+- what is agentic ai?
+- difference between generative ai vs agentic ai
+- why agentic ai is a fit for this project (FFA) ?
+- create a short internal doc
+
+1. planning & scoping
+- define the problem
+	- automate extracting structured data from various PDFs and input into correct office application (ex: excel)
+	- needs to be adaptive (different PDF types, different destinations, different formats)
+- define the MVP Scope (minimum viable product)
+- break into modules
+- set timeline / deadline (presentation is May 16)
+
+2. project structuring
+- folder structure, etc
+
+3. select which tech stacks to use
+- for pdf parsing
+- python? c++? java?
+
+4. development
+
+5. testing and validation
+
+6. deployment ready practices
+
+7. documentation
+- readme
+- docstrings
+
+8. code polishing
+
+
+🔧 Suggested Immediate Next Steps
+	1.	Implement doc_type_detector.py (LLM + fallback rules) ✅
+	2.	Create destination_router.py using doc_types.yaml or routing_rules.yaml ✅
+	3.	Design schema_formatter.py or add logic inside extractors ✅
+	4.	Finish CLI UX flow in run.py (interactive CLI or flag-based)
+	5.	Test with real PDF examples
+	6.	Write README.md (start now, refine later)
+	7.	Polish with Black + Add Docstrings

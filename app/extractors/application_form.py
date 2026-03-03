@@ -54,7 +54,7 @@ def extract_application_fields(pdf_path: str) -> dict:
         prompt = extract_prompt_from_scanned_form(pdf_path)
     else:
         prompt = f"""
-Given layout text and filled field values from an employment application PDF, extract all extracted data as flat key-value pairs using the following rules: 
+given layout text and filled field values from an employment application PDF, extract all extracted data as flat key-value pairs using the following rules: 
 - Layout may contain user input (from OCR). Field values use raw IDs (e.g., Text_1)
 - Keys must be in lowercase snake_case
 - No spaces, camelCase, markdown, explanation

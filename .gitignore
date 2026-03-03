@@ -1,0 +1,33 @@
+# --- System files ---
+.DS_Store
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+
+# --- Environment variables ---
+.env
+
+# --- Secret keys and credentials ---
+config/gsheet_service_account.json
+
+# --- Virtual environments ---
+.venv/
+env/
+venv/
+
+# --- IDE/editor settings ---
+.vscode/
+.idea/
+*.swp
+
+# --- Output or staging files ---
+data/sample_outputs/
+data/sample_pdfs/*.pdf
+
+# --- Planning and internal docs ---
+planning/
+pdf_format_examples/
+
+# --- Logs and temporary files ---
+*.log
