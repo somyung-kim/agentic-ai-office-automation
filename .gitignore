@@ -24,6 +24,7 @@ venv/
 # --- Output or staging files ---
 data/sample_outputs/
 data/sample_pdfs/*.pdf
+*.xlsx
 
 # --- Planning and internal docs ---
 planning/
