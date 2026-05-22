@@ -1,5 +1,4 @@
 from app.utils.pdf_utils import ingest_pdf
-from app.utils.doc_type_detector import get_doc_type
 from app.extractors.invoice import extract_invoice_fields
 from app.routers.excel_writer import write_to_excel
 

@@ -1,5 +1,4 @@
 from app.utils.pdf_utils import ingest_pdf
-from app.utils.doc_type_detector import get_doc_type
 from app.extractors.meeting_summary import extract_meeting_fields
 from app.routers.gsheet_writer import write_to_gsheet
 import pandas as pd
