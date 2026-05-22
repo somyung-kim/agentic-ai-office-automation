@@ -3,6 +3,7 @@ from app.pipelines.invoice_pipeline import run_invoice_pipeline
 from app.pipelines.application_form_pipeline import run_application_form_pipeline
 from app.pipelines.meeting_summary_pipeline import run_meeting_summary_pipeline
 from app.utils.doc_type_detector import get_doc_type
+from app.utils.pdf_utils import extract_text_non_form
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,7 +17,8 @@ def main():
     args = parser.parse_args()
 
     pdf_path = args.pdf_path
-    doc_type = get_doc_type(pdf_path)
+    text = extract_text_non_form(pdf_path)
+    doc_type = get_doc_type(text)
 
     if doc_type == "invoice":
         if not args.excel_path:
